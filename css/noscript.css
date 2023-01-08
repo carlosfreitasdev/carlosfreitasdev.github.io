@@ -1,0 +1,8 @@
+.is-preload .tiles article {
+     -moz-transform: none;
+     -webkit-transform: none;
+     -ms-transform: none;
+     -o-transform: none;
+     transform: none;
+     opacity: 1;
+}
