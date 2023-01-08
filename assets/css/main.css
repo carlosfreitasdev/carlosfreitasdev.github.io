@@ -303,6 +303,7 @@ input, select, textarea {
 	.description {
 		text-transform: capitalize;
 	}
+	
 	.align-left {
 		text-align: left;
 	}
