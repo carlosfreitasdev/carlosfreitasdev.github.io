@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 	<head>
 		<title>Carlos Freitas</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -36,13 +37,14 @@
 					都市名を入力すると、その都市の現在の天気に関する情報が表示される。
 					<div class="weather">
 						<div class="search">
-							<input type="text" autofocus="autofocus" class="search-bar">
-								<button>場所を設定する</button>
+							<input type="text" autofocus="autofocus" id="search-bar" class="search-bar">
+							<input type="hidden" class="lang" value="ja">
+							<div id="map" class="map"></div>
+							<button>場所を設定する</button>
 						</div>
-						<br></br>
 						<h7 class = "city" ></h7>
 						<div class="temp"></div>
-							<img src="" alt="" class="icon"/>
+						<img src="" alt="" class="icon"/>
 						<div class="description"></div>
 						<div class="humidity"></div>
 						<div class="wind"></div>
@@ -69,6 +71,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/weather_jp.js"></script>
+			<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+			<script src="assets/js/weather.js"></script>
 	</body>
 </html>
