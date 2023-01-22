@@ -1,6 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+#map
+{ 
+	height: 180px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -303,7 +308,6 @@ input, select, textarea {
 	.description {
 		text-transform: capitalize;
 	}
-	
 	.align-left {
 		text-align: left;
 	}
