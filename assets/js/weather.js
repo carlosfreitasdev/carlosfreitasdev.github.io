@@ -70,6 +70,15 @@ let weather = {
 			document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
 			document.querySelector(".wind").innerText = "Wind Speed: " + speed + " km/s";
 		}
+		if (lang == 'pt')
+		{
+			document.querySelector(".city").innerText = name + " , " + country;
+			document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + ".png"
+			document.querySelector(".description").innerText = description;
+			document.querySelector(".temp").innerText = temp + "ºC";
+			document.querySelector(".humidity").innerText = "Humidade: " + humidity + "%";
+			document.querySelector(".wind").innerText = "Vento: " + speed + " km/s";
+		}
 	},
 	search: function() {
 		this.fetchWeather(document.querySelector(".search-bar").value);
