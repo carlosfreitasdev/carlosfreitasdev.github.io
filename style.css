@@ -36,6 +36,7 @@ body {
   background-color: #31363F;
   color: #76ABAE;
   padding: 10px;
+  text-align: center;
 }
 img{
   max-width:100%;
@@ -54,4 +55,8 @@ table{
 th, td{
   border: 1px solid #76ABAE;
   text-align: center;
+}
+
+.footer a{
+  padding: 50px;
 }
